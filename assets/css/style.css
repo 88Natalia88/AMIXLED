@@ -463,12 +463,26 @@ margin-top: 40px;
     .catalog-goods{
         margin-left: 50px;
     }
+    .catalog-button{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap:10px
+    }
 }
 @media screen and (max-width: 320px) {
+    .about, .contacts-menu, .catalog{
+        max-width: 300px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .about-video iframe{
-        width: 300px;
+        width: 280px;
     }
     .catalog-goods{
         margin-left: 30px;
+    }
+    .main-action{
+        margin-top: 20px;
     }
 }
