@@ -1,2 +1,2 @@
-# AMIXLED-1
+# AMIXLED
 business card website
