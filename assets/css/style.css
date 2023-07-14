@@ -62,9 +62,9 @@ body{
     overflow: hidden;
     background-image: url("../img/bg/bg.jpg");
     background-repeat: no-repeat;
-    /*background-position: center center;*/
-    background-position: top center;
-    background-size: contain;
+    background-position: center center;
+    /*background-position: top center;*/
+    background-size: cover;
     height: 110vh;
     /*color: white;*/
 }
@@ -202,7 +202,7 @@ margin-top: 40px;
 }
 .catalog-goods{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 250px);
     grid-template-rows: 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
@@ -215,9 +215,12 @@ margin-top: 40px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    width: 200px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .product h3, .product p, .product button{
     margin-top: 10px;
@@ -245,4 +248,227 @@ margin-top: 40px;
 .product a{
     text-decoration: none;
     color:#191411;
+}
+@media screen and (max-width: 1024px) {
+    .about, .contacts-menu, .catalog, .header{
+        max-width: 980px;
+    }
+    .main{
+        height: 90vh;
+    }
+    .container h1{
+        margin-top: 200px;
+    }
+    .catalog-button button{
+        width: 180px;
+        font-size: 18px;
+    }
+    .catalog-goods{
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+@media screen and (max-width:768px) {
+    .about, .contacts-menu, .catalog{
+        max-width: 750px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .main{
+        height: 60vh;
+    }
+    .menu-item {
+        margin-right: 30px;
+    }
+    .menu-item a {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .logo img, .footer-logo img{
+        width: 45px;
+        height: 45px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .logo-title{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .container h1{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+    .container p{
+        margin-top: 40px;
+    }
+    .button{
+        width: 200px;
+        height: 52px;
+    }
+    .about-title{
+        margin-top: 40px;
+    }
+    .about-title h2, .contact-title h2, .catalog-title h2{
+        font-size: 30px;
+    }
+    .about-list p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .about-video{
+        margin-top: 50px;
+    }
+    .address, .id, .mode, .phone, .email{
+        margin-bottom: 10px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contact{
+        margin-top: 20px;
+    }
+    .contact-title, .catalog-title{
+        margin-top: 40px;
+    }
+    .footer{
+        margin-top: 40px;
+        height: 80px;
+    }
+    .footer-title{
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+    .catalog-button{
+    margin-top: 20px;
+    }
+    .catalog-button button{
+        width: 120px;
+        font-size: 16px;
+    }
+    .catalog-goods{
+        grid-template-columns: repeat(2, 250px);
+    }
+    .product h3, .product p, .product button{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:425px) {
+    .about, .contacts-menu, .catalog{
+        max-width: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .main{
+        height: 40vh;
+    }
+    .menu-item {
+        margin-right: 10px;
+    }
+    .menu-item a {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+    .logo img, .footer-logo img{
+        width: 25px;
+        height: 25px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .title-ru{
+        display: none;
+    }
+    .container h1{
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .container p{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .button{
+        width: 170px;
+        height: 32px;
+    }
+    .about-title{
+        margin-top: 20px;
+    }
+    .about-title h2, .contact-title h2, .catalog-title h2{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .about-list p{
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .about-video{
+        margin-top: 20px;
+    }
+    .about-video iframe{
+        width: 380px;
+        height: 200px;
+    }
+    .address, .id, .mode, .phone, .email{
+        margin-bottom: 5px;
+    }
+    .address img, .id img, .mode img, .phone img, .email img{
+        width: 32px;
+        height: 32px;
+    }
+    .addresses p, .phone-text p, .email-text p, .mode-text p, .id-text p{
+        padding: 5px;
+    }
+    .contact{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+    .contact-title, .catalog-title{
+        margin-top: 20px;
+    }
+    .footer{
+        margin-top: 20px;
+        height: 60px;
+    }
+    .catalog-button button{
+        width: 80px;
+        height: 22px;
+        font-size: 12px;
+    }
+    .catalog-goods{
+        grid-template-columns: repeat(1, 250px);
+        margin-left: 70px;
+    }
+    .social-icon img{
+        margin-top: 8px;
+        padding: 3px;
+        width: 32px;
+        height: 32px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .about-video iframe{
+        width: 365px;
+    }
+    .catalog-goods{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about-video iframe{
+        width: 300px;
+    }
+    .catalog-goods{
+        margin-left: 30px;
+    }
 }
