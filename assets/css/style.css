@@ -465,10 +465,18 @@ margin-top: 40px;
     }
 }
 @media screen and (max-width: 320px) {
+    .about, .contacts-menu, .catalog{
+        max-width: 300px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .about-video iframe{
-        width: 300px;
+        width: 280px;
     }
     .catalog-goods{
         margin-left: 30px;
+    }
+    .main-action{
+        margin-top: 20px;
     }
 }
