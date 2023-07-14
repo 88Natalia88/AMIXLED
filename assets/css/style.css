@@ -458,10 +458,16 @@ margin-top: 40px;
 }
 @media screen and (max-width: 375px) {
     .about-video iframe{
-        width: 365px;
+        width: 358px;
+    }
+    .container h1{
+        margin-top: 30px;
     }
     .catalog-goods{
         margin-left: 50px;
+    }
+    .main-action{
+        margin-top: 20px;
     }
     .catalog-button{
         display: grid;
@@ -481,8 +487,5 @@ margin-top: 40px;
     }
     .catalog-goods{
         margin-left: 30px;
-    }
-    .main-action{
-        margin-top: 20px;
     }
 }
