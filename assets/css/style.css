@@ -181,9 +181,14 @@ body{
 .order-text p{
     margin-bottom: 10px;
     letter-spacing: 1px;
+    font-size: 14px;
 }
 .order-text li, .order-advace li{
     padding: 10px;
+    font-size: 14px;
+}
+.order-advace p{
+    font-size: 14px;
 }
 .social-icon img{
     margin-top: 20px;
