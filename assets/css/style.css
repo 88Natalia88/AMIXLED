@@ -131,7 +131,7 @@ body{
 .about-title{
     margin-top: 80px;
 }
-.about-title h2, .contact-title h2, .catalog-title h2{
+.about-title h2, .contact-title h2, .catalog-title h2, .order-title h2{
     font-size: 40px;
     color: #3d67b0;
 }
@@ -164,9 +164,26 @@ body{
 .contact-title, .catalog-title{
     margin-top: 80px;
 }
-.contacts-menu, .catalog{
+.contacts-menu, .catalog, .order-info{
     max-width: 1200px;
     margin: 0 auto;
+}
+.contact-all p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.order{
+    margin-top: 80px;
+}
+.order-text{
+    margin-top: 40px;
+}
+.order-text p{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.order-text li, .order-advace li{
+    padding: 10px;
 }
 .social-icon img{
     margin-top: 20px;
@@ -250,7 +267,7 @@ margin-top: 40px;
     color:#191411;
 }
 @media screen and (max-width: 1024px) {
-    .about, .contacts-menu, .catalog, .header{
+    .about, .contacts-menu, .catalog, .header, .order-info{
         max-width: 980px;
     }
     .main{
@@ -268,7 +285,7 @@ margin-top: 40px;
     }
 }
 @media screen and (max-width:768px) {
-    .about, .contacts-menu, .catalog{
+    .about, .contacts-menu, .catalog, .order-info{
         max-width: 750px;
         margin-left: 50px;
         margin-right: 50px;
